@@ -1,0 +1,45 @@
+/*************** RESET ***************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, 
+p, a, input, button, textarea {
+  font-family: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*************** GLOBAL ***************/
+:root {
+  font: 400 62.5%/1 'Nunito', sans-serif;
+}
+
+body {
+  height: 100vh;
+  color: white;
+  font-size: 1.8rem;
+}
+
+#logo {
+  animation-delay: 50ms;
+}
+
+.location {
+  animation-delay: 100ms;
+}
+
+main h1 {
+  animation-delay: 150ms;
+}
+
+.visit p {
+  animation-delay: 200ms;
+}
+.visit a {
+  animation-delay: 250ms;
+}
