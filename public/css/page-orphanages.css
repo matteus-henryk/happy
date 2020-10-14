@@ -1,4 +1,4 @@
-/*************** PAGE ORPHANAGE ***************/
+/*************** PAGE ORPHANAGES ***************/
 
 #page-orphanages {
   height: 100%;
@@ -42,7 +42,7 @@ a.create-orphanage {
   position: absolute;
   right: 4rem;
   bottom: 4rem;
-  z-index: 999;
+  z-index: 10;
 
   width: 6.4rem;
   height: 6.4rem;
