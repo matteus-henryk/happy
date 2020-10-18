@@ -63,7 +63,7 @@ fieldset legend {
 
 .input-block input:valid,
 .input-block textarea:valid {
-  border: 
+  border: ;
 }
 
 .input-block textarea {
@@ -103,4 +103,15 @@ fieldset legend {
   padding: .6rem;
   display: flex;
   cursor: pointer;
+}
+
+span.error.active {
+  color: #dc3545;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.input-block input.error,
+.input-block textarea.error {
+  border: 1px solid #dc3545;
 }

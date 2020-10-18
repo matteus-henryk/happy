@@ -44,25 +44,29 @@
           <div class="map-container">
             <div id="mapid"></div>
             <input type="hidden" name="lat" value="">
-            <input type="hidden" name="lng" value="">
+            <input type="hidden" name="lng" value="" required>
             <footer>
               <a href="#" id="select-point">
                 Clique no mapa para adicionar a localização
               </a>
             </footer>
+            <span class="error"></span>
           </div>
 
           <div class="input-block">
             <label for="name">Nome</label>
             <input id="name" name="name" required>
+            <span class="error"></span>
           </div>
           <div class="input-block">
             <label for="about">Sobre <span>Máximo de 300 caracteres</span></label>
             <textarea id="about" name="about" required></textarea>
+            <span class="error"></span>
           </div>
           <div class="input-block">
             <label for="whatsapp">Número de Whatsapp</label>
             <input id="whatsapp" name="whatsapp" required>
+            <span class="error"></span>
           </div>
           <div class="input-block images">
             <label for="images">Fotos</label>
@@ -71,8 +75,8 @@
               <div class="new-upload">
                 <input name="images" type="url" placeholder="Cole o link da foto aqui" required>
                 <span onclick="deletField(event)"> <img src="/images/remove-file.svg" alt="Remopver"></span>
+                <span class="error"></span>
               </div>
-
             </div>
             <button onclick="addPhotoField()" type="button">
               <img src="/images/add-file.svg" alt="Nova imagem">
@@ -84,10 +88,12 @@
           <div class="input-block">
             <label for="instructions">Instruções</label>
             <textarea id="instructions" name="instructions" required></textarea>
+            <span class="error"></span>
           </div>
           <div class="input-block">
             <label for="opening_hours">Horário das visita</label>
             <input id="opening_hours" name="opening_hours" required>
+            <span class="error"></span>
           </div>
           <div class="input-block">
             <label for="open_on_weekends">Atende fim de semana?</label>
@@ -101,6 +107,7 @@
                 Não
               </button>
             </div>
+            <span class="error"></span>
             <button type="submit" class="primary-button">
               Confirmar
             </button>
@@ -112,6 +119,7 @@
   </div>
 
   <script src="/scripts/page-create-orphanage.js"></script>
+  <script src="/scripts/validators.js"></script>
 </body>
 
 </html>
